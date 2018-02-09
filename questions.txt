@@ -2,23 +2,55 @@ Your name
 CSCI-305
 
 10.
-
+  The problem I am seeing at this point in the lab is the repetition of many key words
+  until the maximum word limit is met. The words such as "a, an, and, for, etc" are being
+  repeated one after another in most of the song titles generated. For example, when the
+  word "sad" is typed in, you get "sad love song for you ready for you ready for you ready",
+  with "for you ready" repeating until the 20 word max is met. This should be expected
+  as long as there is no exception for checking for repeating words.
 14.
-
+  Again, given that there is no exception for handling if a word or phrase is being repeated,
+  there's a good chance that the title will begin repeating. In the example, it just so happens that
+  the most common occurring words after "for" is "you", "you" is "ready" and "ready" is for. With this
+  coincidence, the phrase "for you ready" is bound to repeat as there are no 'exit' words
+  that follow any of the three words.
 15.
-
+  I found a song title that is less than 20 words. When I use the word "chat" there's a
+  chance that I get the title "chat botte" back. But a lot of the time I get a title
+  that is 20 words long due to the randomly choosing a bigram due to the occurrences
+  being the same between two words.
 16.
-
+  My extension just includes checking to see if the next word to be appended to the song title
+  is already in the song title. I understand that this might not be the most effective way
+  of doing this due to it not being illegal for song titles to contain the same word, but I
+  found this way efficient enough to eliminate repeating phrases. The only situation where
+  this would not work, is if the next word has the same number of occurrences as another,
+  therefore it would choose it randomly. By using title.include?(current_word) I can check to see
+  if the next most common word is already in the title, and if it is, break from the loop
+  and return the song title.
 19.
-
+  I do not get the same title every time. The first time I got "bob marley song you are"
+  the second time I got "bob marley purt drive me down broad blues night long way you are",
+  the third time I got "bob marley is my heart". It differs every time due to words such as song,
+  time, and is having the same number of occurrences as each other after marley, therefore being
+  randomly chosen to follow marley.
 20.
-
+  Aside from all the hilarious but inappropriate song titles you can generate, I'll say that
+  "butt naked rain come back home christmas song you are" is my favorite (non horrifying) title
 21.
-
+  I thought ruby was really good for string manipulation and possibly it would be nice for
+  crunching data for machine learning applications
 22.
-
+  I did not like the hash manipulation in Ruby, it was kind of confusing how to access
+  all the different parts of your hash given that it was two deep.
 23.
-
+  I enjoyed this lab for the most part. It was satisfying once I got it working well; and regex ended 
+  up being kind of fun to use and play around with it. I was not a fan of the data structure we had to use though.
 24.
-
+  I spent approximately put in 16-17 hours into this program. It was tough learning all the
+  different aspects of it such as regex, hash, hash manipulation, and a lot of just the syntax
+  of ruby. It wasn't necessarily hard, but it was tricky to get acclimated to the environment more
+  than anything.
 25.
+  I would use Ruby again I think. As I previously said, it would be nice to use in
+  a machine learning environment.
